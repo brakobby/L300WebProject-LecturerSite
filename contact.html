@@ -1,149 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <title>Dr. Arhin - Contact</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <header>
-        <h2>DR. ARHIN</h2>
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-
-        <nav id="navbar">
-
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="course.html">Courses</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <button>Book Appointment</button>
-    </header>
-    <main>
-        <div class="abt-container">
-            <img src="/images/lib.jpeg" alt="">
-            <h2 ata-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">Contact Me Now</h2>
+  </head>
+  <body>
+    <header class="container-fluid p-0 fixed-top">
+      <!-- Using boostrap for the navbar -->
+      <a
+        class="close-navbar-toggler collapsed"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+      </a>
+      <nav class="container navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <h2 class="navbar-brand me-2 pt-3">DR. ARHIN</h2>
+          <button
+            class="navbar-toggler me-2 d-lg-none flex-column justify-content-around collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-2" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-2 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="course.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button class="app d-none d-lg-block">Book Appointment</button>
         </div>
-
-        <section>
-            <div class="cnt-main">
-                <div class="cont-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d127062.00293756866!2d-0.17740232752092702!3d5.61307067229922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d5.569846999999999!2d-0.1959418!4m0!5e0!3m2!1sen!2sgh!4v1744109663914!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="cont-info">
-                    <p>📍 <span>Address</span> <br />
-                        Xenon Plaza, 12 Innovation Drive, Accra, Ghana</p>
-                    <p>📞 <span>Phone</span> <br>
-                        +233 55 123 4567 <br>
-                        +233 20 765 4321</p>
-                    
-                    <p><span>✉️ Email:</span> <br>
-                        info@xenontechsolutions.com <br>
-                        support@xenontechsolutions.com</p>
-                    <p>
-                        <span>🌐 Website:</span> <br>
-                        www.xenontechsolutions.com
-                    </p>
-                </div>
-
+      </nav>
+    </header>
+    <main class="container-fluid p-0 m-0">
+      <section class="container-fluid p-0 m-0">
+        <div class="abt-container">
+          <h2 class="animate-on-scroll text-white mt-3 pt-5 text-center">
+            Contact Me
+          </h2>
+        </div>
+      </section>
+      <div class="container" style="margin-top: 69px; margin-bottom: 69px">
+        <div class="row">
+          <div class="col-md-6 animate-on-scroll">
+            <div class="cont-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d127062.00293756866!2d-0.17740232752092702!3d5.61307067229922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d5.569846999999999!2d-0.1959418!4m0!5e0!3m2!1sen!2sgh!4v1744109663914!5m2!1sen!2sgh"
+                width="100%"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-        </section>
-        <section class="tb">
-            <h2>Additional Information</h2>
-            <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-            <tr>
-                <th style="text-align: left;">Field</th>
-                <th style="text-align: left;">Details</th>
-            </tr>
-            <tr>
-                <td>Research Interests</td>
-                <td>Artificial Intelligence, Data Analysis, Cybersecurity</td>
-            </tr>
-            <tr>
-                <td>Courses Taught</td>
-                <td>Introduction to Programming, Web Technologies, IT Essentials</td>
-            </tr>
-            <tr>
-                <td>Office Hours Booking</td>
-                <td>By appointment via email</td>
-            </tr>
-            <tr>
-                <td>Academic Profile</td>
-                <td>
-                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>, 
-                <a href="https://www.researchgate.net" target="_blank">ResearchGate</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Supervision Areas</td>
-                <td>Undergraduate Projects in IT & Computer Science</td>
-            </tr>
-            <tr>
-                <td>Publications</td>
-                <td>Available upon request / Linked on profile</td>
-            </tr>
-            </table>
+          </div>
+          <div class="col-md-6 animate-on-scroll">
+            <div class="cont-info">
+              <p>
+                📍 <span>Address</span> <br />
+                Xenon Plaza, 12 Innovation Drive, Accra, Ghana
+              </p>
+              <p>
+                📞 <span>Phone</span> <br />
+                +233 55 123 4567 <br />
+                +233 20 765 4321
+              </p>
 
-        </section>
-
-        <section class="news">
-            <div class="newsletter">
-                <h2>Subscribe to My Newsletter</h2>
-                <p>Get updates on lectures, resources, assignments, and announcements directly in your inbox.</p>
-                <form action="#" method="POST">
-                  <input type="email" name="email" placeholder="Enter your email address" required>
-                  <button type="submit">Subscribe</button>
-                </form>
-              </div>
-        </section>
+              <p>
+                <span>✉️ Email:</span> <br />
+                info@xenontechsolutions.com <br />
+                support@xenontechsolutions.com
+              </p>
+              <p>
+                <span>🌐 Website:</span> <br />
+                www.xenontechsolutions.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="tb container-fluid">
+        <div class="container">
+          <h2>Additional Information</h2>
+          <table
+            class="animate-on-scroll"
+            border="1"
+            cellpadding="10"
+            cellspacing="0"
+            style="border-collapse: collapse; width: 100%"
+          >
+            <tr>
+              <th style="text-align: left">Field</th>
+              <th style="text-align: left">Details</th>
+            </tr>
+            <tr>
+              <td>Research Interests</td>
+              <td>Artificial Intelligence, Data Analysis, Cybersecurity</td>
+            </tr>
+            <tr>
+              <td>Courses Taught</td>
+              <td>
+                Introduction to Programming, Web Technologies, IT Essentials
+              </td>
+            </tr>
+            <tr>
+              <td>Office Hours Booking</td>
+              <td>By appointment via email</td>
+            </tr>
+            <tr>
+              <td>Academic Profile</td>
+              <td>
+                <a href="https://scholar.google.com" target="_blank"
+                  >Google Scholar</a
+                >,
+                <a href="https://www.researchgate.net" target="_blank"
+                  >ResearchGate</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Supervision Areas</td>
+              <td>Undergraduate Projects in IT & Computer Science</td>
+            </tr>
+            <tr>
+              <td>Publications</td>
+              <td>Available upon request / Linked on profile</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="news container-fluid p-0 m-0">
+        <div class="newsletter container">
+          <div
+            class="animate-on-scroll d-flex align-items-center justify-content-around flex-column"
+            style="height: 300px"
+          >
+            <h2>Subscribe to My Newsletter</h2>
+            <p class="text-center">
+              Get updates on lectures, resources, assignments, and announcements
+              directly in your inbox.
+            </p>
+            <form action="#" method="POST">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <div class="info" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-            <div class="map" >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d127062.00293756866!2d-0.17740232752092702!3d5.61307067229922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d5.569846999999999!2d-0.1959418!4m0!5e0!3m2!1sen!2sgh!4v1744109663914!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="userful-links">
-                <a href="about.html">About Mr. Arhin</a> <br />
-                <a href="about.html">Contact</a> <br />
-                <a href="course.html">Courses</a> <br />
 
-                <h5 style="text-align: left;">&copy;2025 | by TessyWebs</h5>
-            </div>
-            <div class="social">
+    <footer
+      class="container-fluid p-0 m-0"
+      style="background-color: rgb(226, 223, 223)"
+    >
+      <div
+        class="container"
+        style="
+          background-color: rgb(226, 223, 223);
+          padding-top: 50px;
+          padding-bottom: 20px;
+        "
+      >
+        <div class="row">
+          <div class="col-md-6 animate-on-scroll">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d127062.00293756866!2d-0.17740232752092702!3d5.61307067229922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d5.569846999999999!2d-0.1959418!4m0!5e0!3m2!1sen!2sgh!4v1744109663914!5m2!1sen!2sgh"
+              style="border: 0"
+              class="mb-4"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="col-md-6">
+            <div class="userful-links fw-bold animate-on-scroll">
+              <p>USEFUL LINKS</p>
+              <a href="about.html">About Mr. Arhin</a> <br />
+              <a href="about.html">Contact</a> <br />
+              <a href="about.html">Courses</a> <br />
+
+              <div class="social mt-4 pt-5">
+                <p>GET IN TOUCH</p>
                 <a href="https://facebook.com/yourprofile" target="_blank">
-                    <i class="fab fa-facebook"></i>
+                  <i class="fab fa-facebook fa-2x"></i>
                 </a>
                 <a href="https://twitter.com/yourprofile" target="_blank">
-                    <i class="fab fa-twitter"></i>
+                  <i class="fab fa-twitter fa-2x"></i>
                 </a>
                 <a href="https://linkedin.com/in/yourprofile" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                  <i class="fab fa-linkedin fa-2x"></i>
                 </a>
                 <a href="https://instagram.com/yourprofile" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                  <i class="fab fa-instagram fa-2x"></i>
                 </a>
+              </div>
 
-
+              <p class="mt-3" style="text-align: left">
+                &copy;2025 | by TessyWebs
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-
-    <script>
-        
-        const menuToggle = document.getElementById('menu-toggle');
-        const navbar = document.getElementById('navbar');
-
-        menuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-
-
-        AOS.init();
-    </script>
-    
-</body>
+    <script src="./script.js"></script>
+    <!-- For responsiveness using Bootstrap -->
+    <script src="./Bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>

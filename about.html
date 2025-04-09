@@ -1,152 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Arhin</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Dr. Arhin - About</title>
+  </head>
 
-<body>
-    <header>
-        <h2>DR. ARHIN</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="course.html">Courses</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <button>Book Appointment</button>
-    </header>
-    <main>
-        <div class="abt-container">
-            <img src="/images/lib.jpeg" alt="">
-            <h2 ata-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">About Dr. Arhin</h2>
+  <body>
+    <header class="container-fluid p-0 fixed-top">
+      <!-- Using boostrap for the navbar -->
+      <a
+        class="close-navbar-toggler collapsed"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+      </a>
+      <nav class="container navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <h2 class="navbar-brand me-2 pt-3">DR. ARHIN</h2>
+          <button
+            class="navbar-toggler me-2 d-lg-none flex-column justify-content-around collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-2" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-2 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="course.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button class="app d-none d-lg-block">Book Appointment</button>
         </div>
-
-        <section>
-            <div class="abt-main">
-                <div class="abt-text-content">
-                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-                        Mr. Arhin is a passionate and dedicated lecturer with a deep-rooted expertise in computer networking and systems administration. With over a decade of experience in academia and industry, he has mentored countless students into becoming skilled IT professionals.
-                        He holds a Master’s degree in Information Technology and is certified in several industry-standard networking protocols and systems, including Cisco (CCNA), CompTIA Network+, and Microsoft Certified Solutions Associate (MCSA). Mr. Arhin combines theory with real-world practice, making his classes both engaging and impactful.
-                    </p>
-                </div>
-                <div class="pic01" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-                    <img src="/images/prof arhin.png" alt="">
-                </div>
-
-                
+      </nav>
+    </header>
+    <main class="container-fluid p-0 m-0">
+      <section class="container-fluid p-0 m-0">
+        <div class="abt-container">
+          <!-- <img src="./images/lib.jpeg" alt="" /> -->
+          <h2 class="animate-on-scroll text-white mt-3 pt-5 text-center">
+            About Dr. Arhin
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row my-4 py-3">
+            <div class="col-md-2 animate-on-scroll">
+              <div class="pic01">
+                <img src="./images/prof arhin.png" alt="" />
+              </div>
             </div>
-
-            <div class="abt-main">
-                <div class="pic02"data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-                    <img src="/images/ucc.jpeg" alt="">
-                </div>
-
-                <div class="abt-text-content">
-                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-                        Mr. Arhin is a passionate and dedicated lecturer with a deep-rooted expertise in computer networking and systems administration. With over a decade of experience in academia and industry, he has mentored countless students into becoming skilled IT professionals.
-                        He holds a Master’s degree in Information Technology and is certified in several industry-standard networking protocols and systems, including Cisco (CCNA), CompTIA Network+, and Microsoft Certified Solutions Associate (MCSA). Mr. Arhin combines theory with real-world practice, making his classes both engaging and impactful.
-                    </p>
-                </div>
-                
-                
+            <div
+              class="col-md-10 animate-on-scroll"
+              style="text-align: justify"
+            >
+              <p>
+                Mr. Arhin is a passionate and dedicated lecturer with a
+                deep-rooted expertise in computer networking and systems
+                administration. With over a decade of experience in academia and
+                industry, he has mentored countless students into becoming
+                skilled IT professionals. He holds a Master’s degree in
+                Information Technology and is certified in several
+                industry-standard networking protocols and systems, including
+                Cisco (CCNA), CompTIA Network+, and Microsoft Certified
+                Solutions Associate (MCSA). Mr. Arhin combines theory with
+                real-world practice, making his classes both engaging and
+                impactful.
+              </p>
             </div>
-            
-        </section>
-
-        <section id="sk">
-            <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">Professional Skills</h2>
-            <div class="main-cont" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-                <div class="skills-set">
-                    <div class="abt-skills">
-                        <img src="/images/pyicon.jpeg" alt="">
-                        <p>Python Programming</p>
-        
-                    </div>
-                    <div class="abt-skills">
-                        <img src="/images/cpp.jpeg" alt="">
-                        <p>C++ Programming</p>
-        
-                    </div>
-                    <div class="abt-skills">
-                        <img src="/images/javaIcon.jpeg" alt="">
-                        <p>Java Programming</p>
-        
-                    </div>
-                    <div class="abt-skills">
-                        <img src="/images/flutter.jpeg" alt="">
-                        <p>Flutter Programming</p>
-        
-                    </div>
-                </div>
-
-                <div class="skills-set">
-                    <div class="abt-skills">
-                        <img src="/images/linux.jpeg" alt="">
-                        <p>Advance CyberSecurity</p>
-        
-                    </div>
-                    <div class="abt-skills">
-                        <img src="/images/react.jpeg" alt="">
-                        <p>React Programming</p>
-        
-                    </div>
-                    <div class="abt-skills">
-                        <img src="/images/php.jpeg" alt="">
-                        <p>pHp Programming</p>
-        
-                    </div>
-                    <div class="abt-skills">
-                        <img src="/images/cisco.jpeg" alt="">
-                        <p>CISCO Networking</p>
-        
-                    </div>
-                </div>
-
-                
+          </div>
+          <div class="row my-2 py-2">
+            <div class="col-md-2 animate-on-scroll">
+              <div class="pic01">
+                <img src="./images/ucc.jpeg" alt="" />
+              </div>
             </div>
-            
-        </section>
+            <div
+              class="col-md-10 animate-on-scroll"
+              style="text-align: justify"
+            >
+              <p>
+                Mr. Arhin is a passionate and dedicated lecturer with a
+                deep-rooted expertise in computer networking and systems
+                administration. With over a decade of experience in academia and
+                industry, he has mentored countless students into becoming
+                skilled IT professionals. He holds a Master’s degree in
+                Information Technology and is certified in several
+                industry-standard networking protocols and systems, including
+                Cisco (CCNA), CompTIA Network+, and Microsoft Certified
+                Solutions Associate (MCSA). Mr. Arhin combines theory with
+                real-world practice, making his classes both engaging and
+                impactful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="sk" class="container-fluid p-0 m-0">
+        <div class="container mb-4">
+          <div class="row">
+            <div class="col-12 animate-on-scroll">
+              <h2>Professional Skills</h2>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 d-flex flex-column">
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/pyicon.jpeg" alt="" />
+                    <p class="text-center">Python Programming</p>
+                  </div>
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/cpp.jpeg" alt="" />
+                    <p class="text-center">C++ Programming</p>
+                  </div>
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/javaIcon.jpeg" alt="" />
+                    <p class="text-center">Java Programming</p>
+                  </div>
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/flutter.jpeg" alt="" />
+                    <p class="text-center">Flutter Programming</p>
+                  </div>
+                </div>
+
+                <div class="col-6 d-flex flex-column">
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/linux.jpeg" alt="" />
+                    <p class="text-center">Advance CyberSecurity</p>
+                  </div>
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/react.jpeg" alt="" />
+                    <p class="text-center">React Programming</p>
+                  </div>
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/php.jpeg" alt="" />
+                    <p class="text-center">pHp Programming</p>
+                  </div>
+                  <div
+                    class="abt-skills d-flex align-items-center justify-content-center flex-column animate-on-scroll"
+                  >
+                    <img src="./images/cisco.jpeg" alt="" />
+                    <p class="text-center">CISCO Networking</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <div class="info" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out">
-            <div class="map" >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d127062.00293756866!2d-0.17740232752092702!3d5.61307067229922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d5.569846999999999!2d-0.1959418!4m0!5e0!3m2!1sen!2sgh!4v1744109663914!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="userful-links">
-                <a href="about.html">About Mr. Arhin</a> <br />
-                <a href="about.html">Contact</a> <br />
-                <a href="course.html">Courses</a> <br />
+    <footer
+      class="container-fluid p-0 m-0"
+      style="background-color: rgb(226, 223, 223)"
+    >
+      <div
+        class="container"
+        style="
+          background-color: rgb(226, 223, 223);
+          padding-top: 50px;
+          padding-bottom: 20px;
+        "
+      >
+        <div class="row">
+          <div class="col-md-6 animate-on-scroll">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d127062.00293756866!2d-0.17740232752092702!3d5.61307067229922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d5.569846999999999!2d-0.1959418!4m0!5e0!3m2!1sen!2sgh!4v1744109663914!5m2!1sen!2sgh"
+              style="border: 0"
+              class="mb-4"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
 
-                <h5 style="text-align: left;">&copy;2025 | by TessyWebs</h5>
-            </div>
-            <div class="social">
+          <div class="col-md-6">
+            <div class="userful-links fw-bold animate-on-scroll">
+              <p>USEFUL LINKS</p>
+              <a href="about.html">About Mr. Arhin</a> <br />
+              <a href="about.html">Contact</a> <br />
+              <a href="about.html">Courses</a> <br />
+
+              <div class="social mt-4 pt-5">
+                <p>GET IN TOUCH</p>
                 <a href="https://facebook.com/yourprofile" target="_blank">
-                    <i class="fab fa-facebook"></i>
+                  <i class="fab fa-facebook fa-2x"></i>
                 </a>
                 <a href="https://twitter.com/yourprofile" target="_blank">
-                    <i class="fab fa-twitter"></i>
+                  <i class="fab fa-twitter fa-2x"></i>
                 </a>
                 <a href="https://linkedin.com/in/yourprofile" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                  <i class="fab fa-linkedin fa-2x"></i>
                 </a>
                 <a href="https://instagram.com/yourprofile" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                  <i class="fab fa-instagram fa-2x"></i>
                 </a>
+              </div>
 
-
+              <p class="mt-3" style="text-align: left">
+                &copy;2025 | by TessyWebs
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-
-    <script>
-        AOS.init();
-    </script>
-</body>
+    <script src="./script.js"></script>
+    <!-- For responsiveness using Bootstrap -->
+    <script src="./Bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>
