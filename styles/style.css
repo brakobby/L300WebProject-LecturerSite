@@ -152,6 +152,11 @@ header nav a:hover {
   width: 300px;
   /* height: 200px; */
   object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.lecturer:hover {
+  filter: hue-rotate(90deg); /* Rotate the hue for a color shift */
 }
 
 .text-content {
@@ -183,12 +188,12 @@ header nav a:hover {
   align-items: center;
   margin: 20px;
 }
-.abt-content img {
+#about img {
   width: 230px;
   border: 2px solid black;
   transform: scale(1.2s);
 }
-.abt-content img:hover {
+#about img:hover {
   content: url("/images/gggg.png");
   transition: 5s;
 }
@@ -362,7 +367,7 @@ h5 {
   padding: 3px;
 }
 
-.cont-info p span {
+cont-info p span {
   color: var(--accent-color);
   font-weight: bold;
 }
@@ -376,7 +381,8 @@ h5 {
 }
 table {
   width: 800px;
-  border-collapse: collapse;
+  border-collapse: separate; /* Important */
+  border-spacing: 0 10px; /* Adds space between rows to simulate row border */
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -387,18 +393,27 @@ th,
 td {
   padding: 15px 20px;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  background-color: white;
+  border: 1px solid #ddd; /* Border on each cell */
 }
 
 th {
   background-color: var(--accent-color);
   color: white;
   font-weight: bold;
+  border: 2px solid black;
 }
 
-tr:last-child td {
-  border-bottom: none;
+tr {
+  border: 1px solid #ccc; /* Not directly visible unless border-collapse is 'separate' */
+  border-radius: 8px;
 }
+
+/* Optional: Make rows look like cards */
+tr td {
+  border-top: 2px solid #ccc;
+}
+
 
 .newsletter {
   background: white;
@@ -539,5 +554,125 @@ tr:last-child td {
   .about_img {
     width: 100px;
     height: 100px;
+  }
+}
+
+
+/*--------------------- contact -------------------------------*/
+.mainc{
+  background-color: var(--background-color);
+  padding: 10px;
+  margin: 10px;
+}
+.mainb{
+  display: flex;
+  justify-content: space-around;
+
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+label {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.terms {
+  margin-top: 15px;
+}
+
+.terms label {
+  font-weight: normal;
+}
+
+.borderless {
+  width: 500px;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border: none;
+}
+
+.borderless th,
+.borderless td {
+  text-align: left;
+  padding: 10px;
+  border: none;
+}
+
+.borderless th {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: white;
+}
+
+.borderless tr {
+  border: none;
+}
+
+.regc {
+  margin: 20px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Bootstrap animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
